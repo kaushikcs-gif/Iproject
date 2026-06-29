@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Navigation -->
+    <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('skill')">Skills</button>
+        <button onclick="showSection('about')">About Me</button>
+        <button onclick="showSection('projects')">My Projects</button>
+        <button onclick="showSection('learning')">My Learning</button>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="section">
+
+        <h1>Welcome To My Portfolio</h1>
+
+        <img src="image/profile.jpeg" class="home-img" alt="Profile">
+
+        <h2>Kaushik Gupta</h2>
+
+        <p>
+            Hello! I am a Computer Science student.
+            Welcome to my personal portfolio website.
+            Here you can know more about me, my projects,
+            and my learning journey.
+        </p>
+
+        <button class="explore-btn"
+                onclick="showSection('about')">
+            Explore Portfolio
+        </button>
+
+    </div>
+
+    <!-- SKILL --> 
+    <div id="skill" class="section" style="display:none;">
+        <h1>My Skills</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>MongoDB</li>
+        </ul>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="section" style="display:none;">
+
+        <h1>About Me</h1>
+
+        <img src="image/resume.jpeg" class="resume-img" alt="Resume">
+
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects" class="section" style="display:none;">
+
+        <h1>My Projects</h1>
+
+        <div class="project-card">
+            <h3>Loan Prediction System</h3>
+            <p>Machine Learning project using Python.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Heart Disease Prediction Model</h3>
+            <p>HTML, CSS, JavaScript and MongoDB project.</p>
+        </div>
+
+    </div>
+
+    <!-- LEARNING -->
+    <div id="learning" class="section" style="display:none;">
+
+        <h1>Certificates</h1>
+
+        <img src="image/certificate1.jpeg" class="certificate">
+        <img src="image/certificate2.jpeg" class="certificate">
+
+    </div>
+
+</div>
+
+<script src="script3.js"></script>
+
+</body>
+</html>

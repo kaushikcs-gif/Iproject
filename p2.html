@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipkart Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+
+<div class="logo">
+<h1><span>Flipper</span>cart</h1>
+</div>
+
+<div class="search">
+<input type="text" id="search" placeholder="Search for products..." onkeyup="searchProduct()">
+</div>
+
+<div class="menu">
+<a href="login.html"><button>Login</button></a>
+
+<button onclick="openCart()">
+🛒 Cart (<span id="cart-count">0</span>)
+</button>
+</div>
+
+</header>
+
+<!-- Category Buttons -->
+
+<div class="categories">
+
+<button onclick="filterProduct('All')">All</button>
+<button onclick="filterProduct('Electronics')">Electronics</button>
+<button onclick="filterProduct('Fashion')">Fashion</button>
+<button onclick="filterProduct('Home')">Home</button>
+<button onclick="filterProduct('Grocery')">Grocery</button>
+<button onclick="filterProduct('Beauty')">Beauty</button>
+<button onclick="filterProduct('Sports')">Sports</button>
+
+</div>
+
+<!-- Products -->
+
+<div class="products" id="products">
+
+<!-- Electronics -->
+
+<div class="card Electronics">
+<img src="image/mobile.jpeg">
+<h3>Samsung Mobile</h3>
+<p>₹18,999</p>
+<button onclick="addCart('Samsung Mobile')">Add to Cart</button>
+</div>
+
+<div class="card Electronics">
+<img src="image/laptop.jpeg">
+<h3>HP Laptop</h3>
+<p>₹52,999</p>
+<button onclick="addCart('HP Laptop')">Add to Cart</button>
+</div>
+
+<!-- Fashion -->
+
+<div class="card Fashion">
+<img src="image/shirt.jpeg">
+<h3>Men Shirt</h3>
+<p>₹799</p>
+<button onclick="addCart('Men Shirt')">Add to Cart</button>
+</div>
+
+<div class="card Fashion">
+<img src="image/kurti.jpeg">
+<h3>Womens Kurti</h3>
+<p>₹899</p>
+<button onclick="addCart('Womens Kurti')">Add to Cart</button>
+</div>
+
+<!-- Home -->
+
+<div class="card Home">
+<img src="image/sofa.jpeg">
+<h3>Luxury Sofa</h3>
+<p>₹24,999</p>
+<button onclick="addCart('Luxury Sofa')">Add to Cart</button>
+</div>
+
+<div class="card Home">
+<img src="image/fan.jpeg">
+<h3>Ceiling Fan</h3>
+<p>₹2,199</p>
+<button onclick="addCart('Ceiling Fan')">Add to Cart</button>
+</div>
+
+<!-- Grocery -->
+
+<div class="card Grocery">
+<img src="image/rice.jpeg">
+<h3>Basmati Rice</h3>
+<p>₹599</p>
+<button onclick="addCart('Basmati Rice')">Add to Cart</button>
+</div>
+
+<div class="card Grocery">
+<img src="image/oil.jpeg">
+<h3>Cooking Oil</h3>
+<p>₹199</p>
+<button onclick="addCart('Cooking Oil')">Add to Cart</button>
+</div>
+
+<!-- Beauty -->
+
+<div class="card Beauty">
+<img src="image/shampoo.jpeg">
+<h3>Shampoo</h3>
+<p>₹299</p>
+<button onclick="addCart('Shampoo')">Add to Cart</button>
+</div>
+
+<div class="card Beauty">
+<img src="image/perfume.jpeg">
+<h3>Perfume</h3>
+<p>₹799</p>
+<button onclick="addCart('Perfume')">Add to Cart</button>
+</div>
+
+<!-- Sports -->
+
+<div class="card Sports">
+<img src="image/cricketbat.jpeg">
+<h3>Cricket Bat</h3>
+<p>₹1,999</p>
+<button onclick="addCart('Cricket Bat')">Add to Cart</button>
+</div>
+
+<div class="card Sports">
+<img src="image/football.jpeg">
+<h3>Football</h3>
+<p>₹999</p>
+<button onclick="addCart('Football')">Add to Cart</button>
+</div>
+
+</div>
+
+<!-- Cart -->
+
+<div class="cart" id="cart">
+
+<h2>Your Cart</h2>
+
+<ul id="cart-items"></ul>
+
+<button onclick="closeCart()">Close</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
